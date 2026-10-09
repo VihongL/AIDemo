@@ -94,11 +94,29 @@
       line-height: 1.7;
       pointer-events: none;
     }
+    .contact {
+      width: min(1240px, 100%);
+      padding: 16px 4px 0;
+      color: rgba(23, 63, 75, .88);
+      font-size: 14px;
+      text-align: center;
+    }
+    .contact a {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+    .contact a:focus-visible {
+      outline: 3px solid rgba(217, 104, 85, .5);
+      outline-offset: 4px;
+    }
     @media (max-width: 650px) {
       .scene { padding: 0; }
       .frame { min-height: 100vh; border-left: 0; border-right: 0; }
       .topbar { inset: 18px 18px auto; }
       .caption { left: 18px; bottom: 18px; max-width: 210px; }
+      .contact { padding: 14px 18px 18px; }
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
@@ -206,6 +224,9 @@
 
       <div class="caption">把速度放慢一点，听见浪花，也看见一只长着大喙的鹈鹕认真踩着踏板。</div>
     </section>
+    <footer class="contact">
+      联系方式：<a href="https://github.com/VihongL" target="_blank" rel="noopener">VihongL</a>
+    </footer>
   </main>
   <script>
     const scene = document.getElementById("pelican-ride");
